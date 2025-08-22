@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573859e7b821feb48b8e2aa900b4b2cd, type: 3}
+  m_Name: Engineer
+  m_EditorClassIdentifier: 
+  Name: Fred
+  Description: The Engineer, slow and packs a punch
+  Animator: {fileID: 22100000, guid: f7b4c4c71b6f52c4185d8a6681613ae1, type: 2}
+  Icon: {fileID: -7059192863036722103, guid: 0bfad193b91ea334daf88ce30a41b070, type: 3}
+  MovementSpeed: 2
+  Health: 5
