@@ -58,4 +58,10 @@ public class PlayerController : MonoBehaviour
         _rb.linearVelocity = _movementInput * (_player?.CharacterStats?.MovementSpeed ?? 1);
     }
 
+    public void OnDeath()
+    {
+        _anim.enabled = false;
+        enabled = false;
+    }
+
 }

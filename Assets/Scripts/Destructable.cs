@@ -14,11 +14,15 @@ public class Destructable : MonoBehaviour
 
     public void ApplyDamage(float damage)
     {
-        if (_cooldown > 0) { return; }
+        if (_cooldown > 0 || IsDead) { return; }
         _cooldown = .25f;
         currentHealth -= damage;
         if (currentHealth > maxHealth) currentHealth = maxHealth;
-        if (IsDead) Destroy(gameObject);
+        if (IsDead)
+        {
+            currentHealth = 0;
+            gameObject.BroadcastMessage("OnDeath");
+        }
     }
 
     public void SetMaxHealth(float value)

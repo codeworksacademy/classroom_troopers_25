@@ -25,10 +25,10 @@ public class Player : MonoBehaviour
     }
 
 
-    void OnDestroy()
+    public void OnDeath()
     {
         Debug.Log("player is dead");
-        GameManager.Instance.GoToMainMenu();
+        // GameManager.Instance.GoToMainMenu();
     }
 
 }
